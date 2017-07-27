@@ -12,3 +12,17 @@ REST API built upon Node.js using Express Framework. The data is saved in a Mong
 * Rate an existing recipe between 1 and 5
 * Update an existing recipe
 * Store a new recipe
+
+## Install
+
+```shell
+ git clone https://github.com/giuly/gousto.git
+ cd gousto 
+ npm install
+ nodemon
+```
+## Test
+
+```shell
+ npm test
+```
