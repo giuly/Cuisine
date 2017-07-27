@@ -16,7 +16,7 @@ REST API built upon Node.js using Express Framework. The data is saved in a Mong
 ## Install
 
 ```shell
- git clone https://github.com/giuly/gousto.git
+ git clone https://github.com/giuly/Cuisine.git
  cd gousto 
  npm install
  nodemon
