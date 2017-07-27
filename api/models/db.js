@@ -1,8 +1,8 @@
 var mongoose = require('mongoose');
-var dbURI = 'mongodb://localhost/gousto';
+//var dbURI = 'mongodb://localhost/gousto';
+var dbURI = 'mongodb://root:test@ds123933.mlab.com:23933/gousto';
 var shutDown;
 
-// On production env. use mLab database
 // Keep mLab URI in a protected env. variable - MONGOLAB_URI
 if(process.env.NODE_ENV === 'production'){
 	dbURI = process.env.MONGOLAB_URI;
@@ -10,7 +10,7 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 if(process.env.NODE_ENV === 'test') {
-	dbURI = 'mongodb://localhost/gousto_test';
+	dbURI = 'mongodb://root:test@ds159112.mlab.com:59112/gousto_test';
 }
 
 mongoose.connect(dbURI, {useMongoClient: true});
